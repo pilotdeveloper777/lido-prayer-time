@@ -45,17 +45,4 @@ def interpolate_times(start_time, n, interval=20):
 st.set_page_config(page_title="Lido Flight Prayer Times", layout="wide")
 st.title("🛫 Flight Route Islamic Prayer Times")
 
-route_input = st.text_area("Paste Lido route string:", height=100)
-departure_date = st.date_input("Departure Date")
-departure_time = st.time_input("Departure Time (UTC)")
-
-if st.button("Calculate Prayer Times"):
-    if not route_input.strip():
-        st.error("Please enter a route.")
-        st.stop()
-
-    route = route_input.strip().split()
-    waypoints = [w for w in route if w != "DCT" and len(w) <= 6]
-
-    if not waypoints:
-        st.error(
+route_input = st.text_
