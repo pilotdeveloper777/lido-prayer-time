@@ -16,4 +16,5 @@ upload = st.file_uploader("📎 Upload Lido PDF flight plan (optional)", type=["
 route_text = st.text_area("✏️ Or paste Lido route string", height=100)
 departure_date = st.date_input("📆 Departure Date")
 departure_time = st.time_input("🕓 Departure Time (UTC)")
-altitude = st.number_input("🛫 Cruise Flight Level (e.g. FL360)", min_value=100, max_value=500, value_
+altitude = st.number_input("🛫 Cruise Flight Level (e.g. FL360)", min_value=100, max_value=500, value=360, step=10)
+
