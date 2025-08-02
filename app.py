@@ -45,4 +45,5 @@ def interpolate_times(start_time, n, interval=20):
 st.set_page_config(page_title="Lido Flight Prayer Times", layout="wide")
 st.title("🛫 Flight Route Islamic Prayer Times")
 
-route_input = st.text_
+route_input = st.text_area("Paste Lido route string:", height=100)
+
